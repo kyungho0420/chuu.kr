@@ -1,0 +1,535 @@
+<!--
+    Version: 4.1.0 (Migration: Damso V4)
+    Framework: Damso V4
+    Project: CHUU.KR - Custom Cakes & Cookies
+    Last Modified: 2026-01-14 19:40:00 (KST)
+    License: © 2026 Damso. All Rights Reserved.
+-->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title data-lang="meta_title">츄 - 레터링 케익 & 쿠키</title>
+    <meta name="description" data-lang="meta_description"
+        content="달콤한 순간을 선물하는 CHUU의 특별한 주문 제작 케이크와 수제 쿠키를 만나보세요. 모든 순간이 더욱 특별해집니다.">
+    <meta name="keywords" content="레터링 케이크, 포토 케이크, 입체 케이크, 수제 쿠키, 주문 제작 케이크, 기념일 케이크, 답례품 쿠키, CHUU">
+    <link rel="canonical" href="https://www.chuu.kr/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" data-lang="home_title" content="츄 - 레터링 케익 & 쿠키">
+    <meta property="og:description" data-lang="meta_description"
+        content="달콤한 순간을 선물하는 CHUU의 특별한 주문 제작 케이크와 수제 쿠키를 만나보세요. 모든 순간이 더욱 특별해집니다.">
+    <meta property="og:image" content="./section/home/1.jpg">
+
+    <link rel="icon" href="./images/favicon.ico">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Poppins:wght@400;600;700&family=Fredoka+One&display=swap"
+        rel="stylesheet">
+
+    <!-- Damso V4 Core -->
+    <link rel="stylesheet" href="https://cdn.dam.so/_inc/express/v4/core/core.css">
+    <script src="https://cdn.dam.so/_inc/express/v4/core/core.js"></script>
+
+    <!-- Damso V4 View: Page -->
+    <link rel="stylesheet" href="https://cdn.dam.so/_inc/express/v4/view/page.css">
+    <script src="https://cdn.dam.so/_inc/express/v4/view/page.js"></script>
+
+    <!-- Damso V4 Plug: Canvas -->
+    <link rel="stylesheet" href="https://cdn.dam.so/_inc/express/v4/plug/canvas/canvas.css">
+    <script src="https://cdn.dam.so/_inc/express/v4/plug/canvas/canvas.js"></script>
+
+    <link rel="stylesheet" href="./lay.css">
+    <script src="./lay.js" defer></script>
+</head>
+
+<body>
+    <nav class="damso-nav">
+        <div class="damso-nav__container">
+            <a href="#home" class="damso-nav__logo" data-lang="home_title">CHUU</a>
+            <div class="damso-nav__buttons">
+                <div id="lang-switcher">
+                    <button data-lang-set="ko" class="active">KO</button>
+                    <button data-lang-set="en">EN</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="damso-header">
+        <div class="damso-header__content js-parallax-content">
+            <h1 class="damso-header__title home-logo">CHUU</h1>
+            <p class="damso-header__description" data-lang="home_description">당신의 달콤한 순간을 만들어요</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="overview" class="damso-section">
+            <div class="damso-container js-fade-in">
+                <h2>
+                    <span translate="no" class="material-symbols-outlined notranslate">cake</span>
+                    <span data-lang="overview_title">사랑을 담아, CHUU</span>
+                </h2>
+                <p class="damso-section__description" data-lang="overview_desc"></p>
+
+            </div>
+        </section>
+
+        <section id="promotion" class="damso-section">
+            <div class="damso-section--parallax damso-dotted chuu-bg-promo">
+            </div>
+            <div class="damso-container js-fade-in">
+                <div class="damso-grid damso-grid--cols-1">
+                    <div class="damso-card damso-card--horizontal">
+                        <div class="damso-card__image-wrapper">
+                            <img src="./section/promotion/01.jpg" alt="Promotion" class="damso-card__image">
+                        </div>
+                        <div class="damso-card__content">
+                            <span class="damso-card__tag">Event</span>
+                            <h3 class="damso-card__title" data-lang="promotion_01_title"></h3>
+                            <p class="damso-card__description" data-lang="promotion_01_desc"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cookies" class="damso-section damso-section-divider">
+            <div class="damso-container js-fade-in">
+                <h2><span translate="no" class="material-symbols-outlined notranslate">cookie</span><span
+                        data-lang="cookies_title"></span></h2>
+                <p class="damso-section__description" data-lang="cookies_desc"></p>
+
+                <div class="damso-slider js-content-slider">
+                    <div class="damso-slider__wrapper">
+                        <div class="damso-slider__item">
+                            <div class="damso-card">
+                                <div class="damso-card__image-wrapper js-lightbox-trigger"><img
+                                        src="./section/cookies/01.jpg" alt="Cookie 01" class="damso-card__image"></div>
+                                <div class="damso-card__content">
+                                    <h3 class="damso-card__title" data-lang="cookies_01_title"></h3>
+                                    <p class="damso-card__description" data-lang="cookies_01_desc"></p>
+                                </div>
+                                <div class="damso-price-info">
+                                    <div class="damso-price-info__item">
+                                        <span class="damso-price-info__label" data-lang="cookies_price_label_3pack"></span>
+                                        <span class="damso-price-info__value" data-lang="cookies_01_price_3pack"></span>
+                                    </div>
+                                    <div class="damso-price-info__item">
+                                        <span class="damso-price-info__label" data-lang="cookies_price_label_6pack"></span>
+                                        <span class="damso-price-info__value" data-lang="cookies_01_price_6pack"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="damso-slider__item">
+                            <div class="damso-card">
+                                <div class="damso-card__image-wrapper js-lightbox-trigger"><img
+                                        src="./section/cookies/02.jpg" alt="Cookie 02" class="damso-card__image"></div>
+                                <div class="damso-card__content">
+                                    <h3 class="damso-card__title" data-lang="cookies_02_title"></h3>
+                                    <p class="damso-card__description" data-lang="cookies_02_desc"></p>
+                                </div>
+                                <div class="damso-price-info">
+                                    <div class="damso-price-info__item">
+                                        <span class="damso-price-info__label" data-lang="cookies_price_label_3pack"></span>
+                                        <span class="damso-price-info__value" data-lang="cookies_02_price_3pack"></span>
+                                    </div>
+                                    <div class="damso-price-info__item">
+                                        <span class="damso-price-info__label" data-lang="cookies_price_label_6pack"></span>
+                                        <span class="damso-price-info__value" data-lang="cookies_02_price_6pack"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="damso-slider__item">
+                            <div class="damso-card">
+                                <div class="damso-card__image-wrapper js-lightbox-trigger"><img
+                                        src="./section/cookies/03.jpg" alt="Cookie 03" class="damso-card__image"></div>
+                                <div class="damso-card__content">
+                                    <h3 class="damso-card__title" data-lang="cookies_03_title"></h3>
+                                    <p class="damso-card__description" data-lang="cookies_03_desc"></p>
+                                </div>
+                                <div class="damso-price-info">
+                                    <div class="damso-price-info__item">
+                                        <span class="damso-price-info__label"
+                                            data-lang="cookies_price_label_10pack"></span>
+                                        <span class="damso-price-info__value" data-lang="cookies_03_price_10pack"></span>
+                                    </div>
+                                    <div class="damso-price-info__item">
+                                        <span class="damso-price-info__label"
+                                            data-lang="cookies_price_label_20pack"></span>
+                                        <span class="damso-price-info__value" data-lang="cookies_03_price_20pack"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="damso-slider__item">
+                            <div class="damso-card">
+                                <div class="damso-card__image-wrapper js-lightbox-trigger"><img
+                                        src="./section/cookies/04.jpg" alt="Cookie 04" class="damso-card__image"></div>
+                                <div class="damso-card__content">
+                                    <h3 class="damso-card__title" data-lang="cookies_04_title"></h3>
+                                    <p class="damso-card__description" data-lang="cookies_04_desc"></p>
+                                </div>
+                                <div class="damso-price-info">
+                                    <div class="damso-price-info__item">
+                                        <span class="damso-price-info__label" data-lang="cookies_price_label_3pack"></span>
+                                        <span class="damso-price-info__value" data-lang="cookies_04_price_3pack"></span>
+                                    </div>
+                                    <div class="damso-price-info__item">
+                                        <span class="damso-price-info__label" data-lang="cookies_price_label_6pack"></span>
+                                        <span class="damso-price-info__value" data-lang="cookies_04_price_6pack"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="damso-slider__item">
+                            <div class="damso-card">
+                                <div class="damso-card__image-wrapper js-lightbox-trigger"><img
+                                        src="./section/cookies/05.jpg" alt="Cookie 05" class="damso-card__image"></div>
+                                <div class="damso-card__content">
+                                    <h3 class="damso-card__title" data-lang="cookies_05_title"></h3>
+                                    <p class="damso-card__description" data-lang="cookies_05_desc"></p>
+                                </div>
+                                <div class="damso-price-info">
+                                    <div class="damso-price-info__item">
+                                        <span class="damso-price-info__label" data-lang="cookies_price_label_3pack"></span>
+                                        <span class="damso-price-info__value" data-lang="cookies_05_price_3pack"></span>
+                                    </div>
+                                    <div class="damso-price-info__item">
+                                        <span class="damso-price-info__label" data-lang="cookies_price_label_6pack"></span>
+                                        <span class="damso-price-info__value" data-lang="cookies_05_price_6pack"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="damso-slider__item">
+                            <div class="damso-card">
+                                <div class="damso-card__image-wrapper js-lightbox-trigger"><img
+                                        src="./section/cookies/06.jpg" alt="Cookie 06" class="damso-card__image"></div>
+                                <div class="damso-card__content">
+                                    <h3 class="damso-card__title" data-lang="cookies_06_title"></h3>
+                                    <p class="damso-card__description" data-lang="cookies_06_desc"></p>
+                                </div>
+                                <div class="damso-price-info">
+                                    <div class="damso-price-info__item">
+                                        <span class="damso-price-info__label" data-lang="cookies_price_label_3pack"></span>
+                                        <span class="damso-price-info__value" data-lang="cookies_06_price_3pack"></span>
+                                    </div>
+                                    <div class="damso-price-info__item">
+                                        <span class="damso-price-info__label" data-lang="cookies_price_label_6pack"></span>
+                                        <span class="damso-price-info__value" data-lang="cookies_06_price_6pack"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="damso-slider__item">
+                            <div class="damso-card">
+                                <div class="damso-card__image-wrapper js-lightbox-trigger"><img
+                                        src="./section/cookies/07.jpg" alt="Cookie 07" class="damso-card__image"></div>
+                                <div class="damso-card__content">
+                                    <h3 class="damso-card__title" data-lang="cookies_07_title"></h3>
+                                    <p class="damso-card__description" data-lang="cookies_07_desc"></p>
+                                </div>
+                                <div class="damso-price-info">
+                                    <div class="damso-price-info__item">
+                                        <span class="damso-price-info__label" data-lang="cookies_price_label_3pack"></span>
+                                        <span class="damso-price-info__value" data-lang="cookies_07_price_3pack"></span>
+                                    </div>
+                                    <div class="damso-price-info__item">
+                                        <span class="damso-price-info__label" data-lang="cookies_price_label_6pack"></span>
+                                        <span class="damso-price-info__value" data-lang="cookies_07_price_6pack"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="damso-slider__item">
+                            <div class="damso-card">
+                                <div class="damso-card__image-wrapper js-lightbox-trigger"><img
+                                        src="./section/cookies/08.jpg" alt="Cookie 08" class="damso-card__image"></div>
+                                <div class="damso-card__content">
+                                    <h3 class="damso-card__title" data-lang="cookies_08_title"></h3>
+                                    <p class="damso-card__description" data-lang="cookies_08_desc"></p>
+                                </div>
+                                <div class="damso-price-info">
+                                    <div class="damso-price-info__item">
+                                        <span class="damso-price-info__label" data-lang="cookies_price_label_3pack"></span>
+                                        <span class="damso-price-info__value" data-lang="cookies_08_price_3pack"></span>
+                                    </div>
+                                    <div class="damso-price-info__item">
+                                        <span class="damso-price-info__label" data-lang="cookies_price_label_6pack"></span>
+                                        <span class="damso-price-info__value" data-lang="cookies_08_price_6pack"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="damso-slider__item">
+                            <div class="damso-card">
+                                <div class="damso-card__image-wrapper js-lightbox-trigger"><img
+                                        src="./section/cookies/09.jpg" alt="Cookie 09" class="damso-card__image"></div>
+                                <div class="damso-card__content">
+                                    <h3 class="damso-card__title" data-lang="cookies_09_title"></h3>
+                                    <p class="damso-card__description" data-lang="cookies_09_desc"></p>
+                                </div>
+                                <div class="damso-price-info">
+                                    <div class="damso-price-info__item">
+                                        <span class="damso-price-info__label" data-lang="cookies_price_label_3pack"></span>
+                                        <span class="damso-price-info__value" data-lang="cookies_09_price_3pack"></span>
+                                    </div>
+                                    <div class="damso-price-info__item">
+                                        <span class="damso-price-info__label" data-lang="cookies_price_label_6pack"></span>
+                                        <span class="damso-price-info__value" data-lang="cookies_09_price_6pack"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="damso-slider__nav">
+                        <button class="damso-slider__nav-button damso-slider--prev" aria-label="Previous"><span
+                                class="material-symbols-outlined">arrow_back</span></button>
+                        <button class="damso-slider__nav-button damso-slider--play-pause" aria-label="Play/Pause"><span
+                                class="material-symbols-outlined">play_arrow</span></button>
+                        <button class="damso-slider__nav-button damso-slider--next" aria-label="Next"><span
+                                class="material-symbols-outlined">arrow_forward</span></button>
+                    </div>
+                </div>
+
+                <div class="damso-faq-container">
+                    <h3 class="damso-faq-title" data-lang="faq_title">FAQ</h3>
+                    <div class="damso-faq-list" data-content-type="faq" data-prefix="faq_cookie" data-dynamic-area></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cakes" class="damso-section damso-section-divider">
+            <div class="damso-container js-fade-in">
+                <h2><span translate="no" class="material-symbols-outlined notranslate">brush</span><span
+                        data-lang="cakes_title"></span></h2>
+                <p class="damso-section__description" data-lang="cakes_desc"></p>
+                <div class="damso-grid damso-grid--cols-3">
+                    <div class="damso-card">
+                        <div class="damso-card__image-wrapper js-lightbox-trigger"><img src="./section/cakes/01.jpg"
+                                alt="Lettering Cake" class="damso-card__image"></div>
+                        <div class="damso-card__content">
+                            <h3 class="damso-card__title" data-lang="cakes_lettering_title"></h3>
+                            <p class="damso-card__description" data-lang="cakes_lettering_desc"></p>
+                            <div class="damso-product-list" data-content-type="product" data-prefix="cake_lettering_option"
+                                data-dynamic-area></div>
+                        </div>
+                        <div class="damso-price-info">
+                            <div class="damso-price-info__item">
+                                <span class="damso-price-info__label" data-lang="pricing_base_fee_label"></span>
+                                <span class="damso-price-info__value" data-lang="cake_lettering_base_price"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="damso-card">
+                        <div class="damso-card__image-wrapper js-lightbox-trigger"><img src="./section/cakes/02.jpg"
+                                alt="Photo Cake" class="damso-card__image"></div>
+                        <div class="damso-card__content">
+                            <h3 class="damso-card__title" data-lang="cakes_photo_title"></h3>
+                            <p class="damso-card__description" data-lang="cakes_photo_desc"></p>
+                            <div class="damso-product-list" data-content-type="product" data-prefix="cake_photo_option"
+                                data-dynamic-area></div>
+                        </div>
+                        <div class="damso-price-info">
+                            <div class="damso-price-info__item">
+                                <span class="damso-price-info__label" data-lang="pricing_base_fee_label"></span>
+                                <span class="damso-price-info__value" data-lang="cake_photo_base_price"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="damso-card">
+                        <div class="damso-card__image-wrapper js-lightbox-trigger"><img src="./section/cakes/03.jpg"
+                                alt="3D Cake" class="damso-card__image"></div>
+                        <div class="damso-card__content">
+                            <h3 class="damso-card__title" data-lang="cakes_3d_title"></h3>
+                            <p class="damso-card__description" data-lang="cakes_3d_desc"></p>
+                            <div class="damso-product-list" data-content-type="product" data-prefix="cake_3d_option"
+                                data-dynamic-area></div>
+                        </div>
+                        <div class="damso-price-info">
+                            <div class="damso-price-info__item">
+                                <span class="damso-price-info__label" data-lang="pricing_base_fee_label"></span>
+                                <span class="damso-price-info__value" data-lang="cake_3d_base_price"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="damso-faq-container">
+                    <h3 class="damso-faq-title" data-lang="faq_title">FAQ</h3>
+                    <div class="damso-faq-list" data-content-type="faq" data-prefix="faq_cake" data-dynamic-area></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="process" class="damso-section damso-section-divider">
+            <div class="damso-container js-fade-in">
+                <h2><span translate="no" class="material-symbols-outlined notranslate">list_alt</span><span
+                        data-lang="process_title"></span></h2>
+                <p class="damso-section__description" data-lang="process_desc"></p>
+                <div class="damso-process-grid">
+                    <div class="damso-process-item">
+                        <div class="damso-process-item__icon"><span class="material-symbols-outlined">edit_square</span>
+                        </div>
+                        <h3 class="damso-process-item__title" data-lang="process_01_title"></h3>
+                        <p class="damso-process-item__description" data-lang="process_01_desc"></p>
+                    </div>
+                    <div class="damso-process-item">
+                        <div class="damso-process-item__icon"><span class="material-symbols-outlined">draw</span></div>
+                        <h3 class="damso-process-item__title" data-lang="process_02_title"></h3>
+                        <p class="damso-process-item__description" data-lang="process_02_desc"></p>
+                    </div>
+                    <div class="damso-process-item">
+                        <div class="damso-process-item__icon"><span class="material-symbols-outlined">bakery_dining</span>
+                        </div>
+                        <h3 class="damso-process-item__title" data-lang="process_03_title"></h3>
+                        <p class="damso-process-item__description" data-lang="process_03_desc"></p>
+                    </div>
+                    <div class="damso-process-item">
+                        <div class="damso-process-item__icon"><span class="material-symbols-outlined">redeem</span></div>
+                        <h3 class="damso-process-item__title" data-lang="process_04_title"></h3>
+                        <p class="damso-process-item__description" data-lang="process_04_desc"></p>
+                    </div>
+                </div>
+                <div class="damso-button-group">
+                    <a href="#" class="damso-btn" data-lang-href="order_button_url" rel="noopener noreferrer">
+                        <span class="damso-form__text" data-lang="btn_order"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="media" class="damso-section damso-section-divider">
+            <div class="damso-container js-fade-in">
+                <h2><span translate="no" class="material-symbols-outlined notranslate">smart_display</span><span
+                        data-lang="media_title"></span></h2>
+                <p class="damso-section__description" data-lang="media_desc"></p>
+                <div class="damso-grid damso-grid--cols-1">
+                    <div class="damso-card">
+                        <video class="damso-card__video" controls poster="./section/media/01.jpg"
+                            src="./section/media/01.mp4">
+                            Your browser does not support the video element.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="location" class="damso-section damso-section-divider">
+            <div class="damso-container js-fade-in">
+                <h2><span translate="no" class="material-symbols-outlined notranslate">location_on</span><span
+                        data-lang="section_location_title"></span></h2>
+                <p class="damso-section__description" data-lang="section_location_desc_anytime"></p>
+                <div class="damso-card">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.689154412275!2d-118.2562447889396!3d34.05199927304996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c64848905333%3A0x4549452dfa14a635!2sU.S.%20Bank%20Tower!5e0!3m2!1sko!2skr!4v1719957863588!5m2!1sko!2skr"
+                        width="100%" height="450" class="damso-card__map" style="border:0;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="damso-address-block">
+                    <p data-lang="address_text"></p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="profile" class="damso-section damso-section-divider">
+            <div class="damso-container js-fade-in">
+                <h2><span translate="no" class="material-symbols-outlined notranslate">contact_mail</span><span
+                        data-lang="section_profile_title"></span></h2>
+                <p class="damso-section__description" data-lang="section_profile_desc"></p>
+                <div class="damso-profile-list">
+                    <div class="damso-profile-list__item">
+                        <strong class="damso-profile-list__label" data-lang="form_label_name"></strong>
+                        <span class="damso-profile-list__value" data-lang="rep_name"></span>
+                    </div>
+                    <div class="damso-profile-list__item">
+                        <strong class="damso-profile-list__label" data-lang="form_label_email"></strong>
+                        <a href="mailto:chuu@example.com" class="damso-profile-list__value" data-lang="email_address"
+                            data-lang-href="email_href" data-demo-link="true"></a>
+                    </div>
+                    <div class="damso-profile-list__item">
+                        <strong class="damso-profile-list__label" data-lang="sns_label_instagram"></strong>
+                        <a href="#" class="damso-profile-list__value" data-demo-link="true">@chuu_cake</a>
+                    </div>
+                    <div class="damso-profile-list__item">
+                        <strong class="damso-profile-list__label" data-lang="sns_label_youtube"></strong>
+                        <a href="#" class="damso-profile-list__value" data-demo-link="true">CHUU TV</a>
+                    </div>
+                    <div class="damso-profile-list__item">
+                        <strong class="damso-profile-list__label" data-lang="sns_label_blog"></strong>
+                        <a href="#" class="damso-profile-list__value" data-demo-link="true">CHUU Blog</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="contact" class="damso-section damso-section-divider">
+            <div class="damso-container js-fade-in">
+                <h2>
+                    <span translate="no" class="material-symbols-outlined notranslate">mail</span>
+                    <span data-lang="section_contact_title"></span>
+                </h2>
+                <p class="damso-section__description" data-lang="section_contact_desc"></p>
+
+                <form class="damso-form damso-contact-form" autocomplete="off" data-demo-mode="true">
+                    <input type="email" name="email" required class="damso-form__input"
+                        data-lang-placeholder="form_placeholder_email" placeholder="Email">
+                    <div class="damso-form__textarea-wrapper">
+                        <textarea name="message" rows="5" required maxlength="5000" class="damso-form__textarea"
+                            data-lang-placeholder="form_placeholder_msg" placeholder="Message"></textarea>
+                    </div>
+                    <input type="hidden" name="form" value="chuu">
+                    <button type="submit" class="damso-btn">
+                        <span class="damso-form__text" data-lang="btn_submit">보내기</span>
+                    </button>
+
+                </form>
+            </div>
+        </section>
+
+
+        <section id="search" class="damso-section">
+            <div class="damso-container js-fade-in">
+                <h2>
+                    <span translate="no" class="material-symbols-outlined notranslate">search</span>
+                    <span data-lang="section_search_title"></span>
+                </h2>
+                <p class="damso-section__description" data-lang="section_search_desc"></p>
+
+                <form class="damso-form damso-search-form" autocomplete="off" data-demo-mode="true">
+                    <input type="text" name="key" required class="damso-form__input"
+                        data-lang-placeholder="form_placeholder_search" placeholder="Search...">
+                    <input type="hidden" name="form" value="chuu">
+                    <button type="submit" class="damso-btn">
+                        <span class="damso-form__text" data-lang="btn_search">검색</span>
+                    </button>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="damso-footer">
+        <div class="damso-container">
+            <p class="render-as-html" data-lang="ui_copyright_text"></p>
+            <p><a data-lang-href="ui_footer_credit_url" rel="noopener noreferrer" data-lang="ui_footer_credit_text"></a>
+            </p>
+        </div>
+    </footer>
+
+    <a href="#home" id="to-top-btn" class="hidden">
+        <span translate="no" class="material-symbols-outlined notranslate">arrow_upward</span>
+    </a>
+</body>
+
+</html>

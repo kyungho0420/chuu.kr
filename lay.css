@@ -1,0 +1,141 @@
+/*
+    Version: 4.4.0
+    Framework: Express Series V4
+    Theme: CHUU - Premium Dessert (Warm & Creamy)
+    Last Modified: 2026-01-14
+    Author: Maxim
+*/
+
+:root {
+    /* Premium Dessert Palette */
+    --damso-color-primary: #F06292;
+    /* Indie Pink / Macaron Pink */
+    --damso-color-secondary: #4DB6AC;
+    /* Muted Mint */
+    --damso-color-accent: #FFD54F;
+    /* Custard Yellow */
+    --damso-color-bg: #FDFBF7;
+    /* Warm Cream White */
+    --damso-color-surface: #FFFFFF;
+    --damso-color-text: #4E342E;
+    /* Dark Chocolate Brown */
+    --damso-color-text-light: #8D6E63;
+    --damso-color-border: #F8BBD0;
+    /* Soft Pink Border */
+
+    --bg-navbar-animated: linear-gradient(135deg, rgba(253, 251, 247, 0.95), rgba(255, 255, 255, 0.95));
+
+    --bg-card: #FFFFFF;
+    --damso-bg-button: var(--damso-color-primary);
+    --damso-bg-button-hover: #EC407A;
+
+    --bg-lang-switcher: #F3E5F5;
+    --bg-lang-switcher-hover: #E1BEE7;
+    --bg-lang-switcher-active: var(--damso-color-primary);
+
+    --bg-offer-badge: #AB47BC;
+    --bg-overlay: rgba(78, 52, 46, 0.05);
+
+    /* Very soft pinkish cream */
+    --damso-card-border: #F8BBD0;
+
+    --damso-color-primary: #4DB6AC;
+}
+
+body,
+.damso-card__title,
+.damso-process-item__title {
+    font-family: 'Gowun Dodum', sans-serif;
+    font-weight: 400;
+}
+
+.damso-header .home-logo {
+    font-family: 'Fredoka One', cursive;
+    font-size: 7em;
+    text-shadow: 3px 3px 0px rgba(240, 98, 146, 0.4), 6px 6px 0px rgba(255, 213, 79, 0.3);
+}
+
+.damso-nav__logo {
+    font-family: 'Fredoka One', cursive;
+}
+
+.damso-header__description {
+    font-family: 'Gowun Dodum', sans-serif;
+    font-size: 1.4rem;
+}
+
+.damso-btn {
+    border-radius: 50px;
+    font-weight: 700;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    padding: 14px 36px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 0px #C2185B;
+    transform: translateY(0);
+}
+
+.damso-section.damso-section-divider {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 180px;
+}
+
+.damso-section.damso-section-divider::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    stroke: #EFA8B8;
+    bottom: -1px;
+    width: 100%;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 1;
+}
+
+.damso-section.to-primary {
+    background-color: var(--bg-footer);
+}
+
+/* --- Section Dividers: "Creamy Mountain" --- */
+
+/*
+   Odd Sections (Usually Primary BG: Cream #FDFBF7)
+   Connecting to Even Section (Secondary BG: Soft Pink #FFF0F5)
+   -> The "Mountain" (SVG Fill) must be the Even Section's BG color (#FFF0F5)
+*/
+.damso-section:nth-of-type(odd).damso-section-divider::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' style='fill:%23FFF0F5;'%3E%3C/path%3E%3C/svg%3E");
+    transform: scaleY(-1);
+}
+
+/*
+   Even Sections (Secondary BG: Soft Pink #FFF0F5)
+   Connecting to Odd Section (Primary BG: Cream #FDFBF7)
+   -> The "Mountain" (SVG Fill) must be the Odd Section's BG color (#FDFBF7)
+*/
+.damso-section:nth-of-type(even) {
+    background-color: #FFF0F5;
+}
+
+.damso-section:nth-of-type(even).damso-section-divider::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' style='fill:%23FDFBF7;'%3E%3C/path%3E%3C/svg%3E");
+    transform: scaleY(-1);
+}
+
+.damso-section--parallax.damso-section-divider::after {
+    display: none;
+}
+
+.damso-section#cookies {
+    padding-top: 100px;
+}
+
+.damso-section#demo {
+    padding: 100px 0;
+}
+
+/* [Extracted Styles] */
+.chuu-bg-promo {
+    background-image: url('./section/promotion/bg.jpg');
+}
