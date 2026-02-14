@@ -7,39 +7,53 @@
 */
 
 :root {
-    /* Premium Dessert Palette */
-    --damso-color-primary: #F06292;
-    /* Indie Pink / Macaron Pink */
-    --damso-color-secondary: #4DB6AC;
+    /* --- Overriding Core Variables (Pastel & Creamy) --- */
+    --damso-color-primary: #F48FB1;
+    /* Pastel Pink */
+    --damso-color-secondary: #B2DFDB;
     /* Muted Mint */
-    --damso-color-accent: #FFD54F;
-    /* Custard Yellow */
+    --damso-color-accent: #FFF59D;
+    /* Custard Vanilla */
+
     --damso-color-bg: #FDFBF7;
-    /* Warm Cream White */
+    /* Warm Cream Background */
     --damso-color-surface: #FFFFFF;
-    --damso-color-text: #4E342E;
-    /* Dark Chocolate Brown */
-    --damso-color-text-light: #8D6E63;
     --damso-color-border: #F8BBD0;
     /* Soft Pink Border */
 
-    --bg-navbar-animated: linear-gradient(135deg, rgba(253, 251, 247, 0.95), rgba(255, 255, 255, 0.95));
+    --damso-color-text: #4E342E;
+    /* Chocolate Brown */
+    --damso-color-text-weak: #8D6E63;
 
-    --bg-card: #FFFFFF;
+    /* Button & Component Overrides */
     --damso-bg-button: var(--damso-color-primary);
     --damso-bg-button-hover: #EC407A;
+    --damso-card-border: var(--damso-color-border);
+    --damso-nav-bg-gradient: linear-gradient(135deg, rgba(253, 251, 247, 0.95), rgba(255, 255, 255, 0.95));
+}
 
-    --bg-lang-switcher: #F3E5F5;
-    --bg-lang-switcher-hover: #E1BEE7;
-    --bg-lang-switcher-active: var(--damso-color-primary);
+[data-theme="dark"] {
+    /* --- Overriding Core Variables (Dark Cocoa) --- */
+    --damso-color-primary: #CE93D8;
+    /* Dusty Purple-Pink */
+    --damso-color-secondary: #80CBC4;
+    /* Deep Mint */
+    --damso-color-accent: #E1BEE7;
 
-    --bg-offer-badge: #AB47BC;
-    --bg-overlay: rgba(78, 52, 46, 0.05);
+    --damso-color-bg: #1A1210;
+    /* Dark Cocoa Background */
+    --damso-color-surface: #2D1E1B;
+    /* Coffee Surface */
+    --damso-color-border: #3E2723;
 
-    /* Very soft pinkish cream */
-    --damso-card-border: #F8BBD0;
+    --damso-color-text: #EFEBE9;
+    /* Milk Cream Text */
+    --damso-color-text-weak: #A1887F;
 
-    --damso-color-primary: #4DB6AC;
+    /* Button & Component Overrides (Dark) */
+    --damso-bg-button: var(--damso-color-primary);
+    --damso-bg-button-hover: #BA68C8;
+    --damso-nav-bg-gradient: linear-gradient(135deg, #1A1210, #2D1E1B);
 }
 
 body,
