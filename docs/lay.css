@@ -7,53 +7,51 @@
 */
 
 :root {
-    /* --- Overriding Core Variables (Modern Vivid Sweetness) --- */
-    --damso-color-primary: #FF006E;
-    /* Vivid Strawberry Pink */
-    --damso-color-secondary: #00F5D4;
-    /* Fresh Mint */
+    /* --- Baskin Robbins Look (Light Mode) --- */
+    --damso-color-primary: #E4007C;
+    /* Strawberry Pink */
+    --damso-color-secondary: #0067B1;
+    /* Royal Blue */
 
-    --damso-color-bg: #FFFFFF;
-    /* Pure White Background for Clarity */
-    --damso-color-surface: #F8F9FA;
+    --damso-color-bg: #FFFBF0;
+    /* Milk Cream (Soft Warm White) */
+    --damso-color-surface: #FFFFFF;
     --damso-color-border: #FFD1E3;
-    /* Brighter Pink Border */
 
-    --damso-color-text: #1A1A1B;
-    /* High Contrast Dark Gray */
+    --damso-color-text: #33201C;
+    /* Dark Cocoa Brown (High Contrast) */
     --damso-color-text-weak: #6B7280;
 
     /* Button & Component Overrides */
     --damso-bg-button: var(--damso-color-primary);
-    --damso-bg-button-hover: #D0005A;
+    --damso-bg-button-hover: #C00068;
     --damso-card-border: var(--damso-color-border);
-    --damso-nav-bg-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(248, 249, 250, 0.95));
+    --damso-nav-bg-gradient: linear-gradient(135deg, rgba(255, 251, 240, 0.95), rgba(255, 255, 255, 0.95));
 
-    /* Reset unnecessary variables */
     --damso-color-accent: var(--damso-color-secondary);
 }
 
 [data-theme="dark"] {
-    /* --- Overriding Core Variables (Deep Night Sweet) --- */
-    --damso-color-primary: #FF4D94;
-    /* Neon Pink */
-    --damso-color-secondary: #00D1B2;
-    /* Vivid Mint */
+    /* --- Dunkin Look (Dark Mode) --- */
+    --damso-color-primary: #FF671F;
+    /* Dunkin Orange */
+    --damso-color-secondary: #DA1884;
+    /* Dunkin Pink */
 
-    --damso-color-bg: #0F0F0F;
-    /* Deep Black Background */
-    --damso-color-surface: #1E1E1E;
-    /* Dark Surface */
-    --damso-color-border: #2D2D2D;
+    --damso-color-bg: #1A1210;
+    /* Dark Cocoa Background */
+    --damso-color-surface: #2D1E1B;
+    /* Coffee Surface */
+    --damso-color-border: #3E2723;
 
-    --damso-color-text: #F3F4F6;
-    /* Clean White Text */
-    --damso-color-text-weak: #9CA3AF;
+    --damso-color-text: #F7F7F7;
+    /* Clean Off-White */
+    --damso-color-text-weak: #A1887F;
 
     /* Button & Component Overrides (Dark) */
     --damso-bg-button: var(--damso-color-primary);
-    --damso-bg-button-hover: #FF7EB3;
-    --damso-nav-bg-gradient: linear-gradient(135deg, #0F0F0F, #1E1E1E);
+    --damso-bg-button-hover: #E55C1A;
+    --damso-nav-bg-gradient: linear-gradient(135deg, #1A1210, #2D1E1B);
 }
 
 body,
@@ -88,11 +86,16 @@ h6,
 .damso-header .home-logo {
     font-family: 'Fredoka One', cursive;
     font-size: 7em;
-    text-shadow: 3px 3px 0px rgba(255, 0, 110, 0.4), 6px 6px 0px rgba(0, 245, 212, 0.3);
+    text-shadow: 3px 3px 0px rgba(228, 0, 124, 0.4), 6px 6px 0px rgba(0, 103, 177, 0.3);
+}
+
+[data-theme="dark"] .damso-header .home-logo {
+    text-shadow: 3px 3px 0px rgba(255, 103, 31, 0.4), 6px 6px 0px rgba(218, 24, 132, 0.3);
 }
 
 .damso-nav__logo {
     font-family: 'Fredoka One', cursive;
+    color: var(--damso-color-primary) !important;
 }
 
 .damso-header__description {
@@ -107,8 +110,13 @@ h6,
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     padding: 14px 36px;
     letter-spacing: 0.5px;
-    box-shadow: 0 4px 15px rgba(255, 0, 110, 0.2);
+    box-shadow: 0 4px 15px rgba(228, 0, 124, 0.2);
     transform: translateY(0);
+    color: #FFFFFF !important;
+}
+
+[data-theme="dark"] .damso-btn {
+    box-shadow: 0 4px 15px rgba(255, 103, 31, 0.2);
 }
 
 .damso-section.damso-section-divider {
@@ -130,11 +138,15 @@ h6,
     opacity: 1;
 }
 
-/* --- Section Dividers: "Modern Bleed" --- */
+/* --- Section Dividers: "Two Worlds" --- */
 
 .damso-section:nth-of-type(odd).damso-section-divider::after {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' style='fill:white;'%3E%3C/path%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' style='fill:%23FFFBF0;'%3E%3C/path%3E%3C/svg%3E");
     transform: scaleY(-1);
+}
+
+[data-theme="dark"] .damso-section:nth-of-type(odd).damso-section-divider::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' style='fill:%231A1210;'%3E%3C/path%3E%3C/svg%3E");
 }
 
 .damso-section:nth-of-type(even) {
@@ -142,8 +154,12 @@ h6,
 }
 
 .damso-section:nth-of-type(even).damso-section-divider::after {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' style='fill:white;'%3E%3C/path%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' style='fill:%23FFFBF0;'%3E%3C/path%3E%3C/svg%3E");
     transform: scaleY(-1);
+}
+
+[data-theme="dark"] .damso-section:nth-of-type(even).damso-section-divider::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' style='fill:%231A1210;'%3E%3C/path%3E%3C/svg%3E");
 }
 
 .damso-section--parallax.damso-section-divider::after {
