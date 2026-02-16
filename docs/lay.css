@@ -87,10 +87,13 @@ h6,
     font-family: 'Fredoka One', cursive;
     font-size: 7em;
     text-shadow: 3px 3px 0px rgba(228, 0, 124, 0.4), 6px 6px 0px rgba(0, 103, 177, 0.3);
+    color: #FFFFFF !important;
+    /* Always white for visibility on canvas */
 }
 
 [data-theme="dark"] .damso-header .home-logo {
     text-shadow: 3px 3px 0px rgba(255, 103, 31, 0.4), 6px 6px 0px rgba(218, 24, 132, 0.3);
+    color: #FFFFFF !important;
 }
 
 .damso-nav__logo {
@@ -101,7 +104,9 @@ h6,
 .damso-header__description {
     font-family: 'Gowun Dodum', sans-serif;
     font-size: 1.4rem;
-    color: var(--damso-color-text) !important;
+    color: #FFFFFF !important;
+    /* Always white on header canvas */
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
 }
 
 .damso-btn {
