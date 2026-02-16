@@ -64,11 +64,25 @@ body,
 }
 
 /* Visibility Fixes */
+/* Visibility & Readability Patches */
 h1,
 h2,
 h3,
-.damso-section__title {
+h4,
+h5,
+h6,
+.damso-section__title,
+.damso-card__title,
+.damso-card__description,
+.damso-process-item__title,
+.damso-faq__title,
+.damso-faq__content,
+.damso-footer__text {
     color: var(--damso-color-text) !important;
+}
+
+.damso-card__description {
+    opacity: 0.85;
 }
 
 .damso-header .home-logo {
@@ -84,6 +98,7 @@ h3,
 .damso-header__description {
     font-family: 'Gowun Dodum', sans-serif;
     font-size: 1.4rem;
+    color: var(--damso-color-text) !important;
 }
 
 .damso-btn {
