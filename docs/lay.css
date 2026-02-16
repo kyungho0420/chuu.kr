@@ -63,10 +63,18 @@ body,
     font-weight: 400;
 }
 
+/* Visibility Fixes */
+h1,
+h2,
+h3,
+.damso-section__title {
+    color: var(--damso-color-text) !important;
+}
+
 .damso-header .home-logo {
     font-family: 'Fredoka One', cursive;
     font-size: 7em;
-    text-shadow: 3px 3px 0px rgba(240, 98, 146, 0.4), 6px 6px 0px rgba(255, 213, 79, 0.3);
+    text-shadow: 3px 3px 0px rgba(255, 0, 110, 0.4), 6px 6px 0px rgba(0, 245, 212, 0.3);
 }
 
 .damso-nav__logo {
@@ -84,7 +92,7 @@ body,
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     padding: 14px 36px;
     letter-spacing: 0.5px;
-    box-shadow: 0 4px 0px #C2185B;
+    box-shadow: 0 4px 15px rgba(255, 0, 110, 0.2);
     transform: translateY(0);
 }
 
@@ -98,7 +106,7 @@ body,
     content: '';
     position: absolute;
     left: 0;
-    stroke: #EFA8B8;
+    stroke: var(--damso-color-primary);
     bottom: -1px;
     width: 100%;
     height: 60px;
@@ -107,33 +115,19 @@ body,
     opacity: 1;
 }
 
-.damso-section.to-primary {
-    background-color: var(--bg-footer);
-}
+/* --- Section Dividers: "Modern Bleed" --- */
 
-/* --- Section Dividers: "Creamy Mountain" --- */
-
-/*
-   Odd Sections (Usually Primary BG: Cream #FDFBF7)
-   Connecting to Even Section (Secondary BG: Soft Pink #FFF0F5)
-   -> The "Mountain" (SVG Fill) must be the Even Section's BG color (#FFF0F5)
-*/
 .damso-section:nth-of-type(odd).damso-section-divider::after {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' style='fill:%23FFF0F5;'%3E%3C/path%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' style='fill:white;'%3E%3C/path%3E%3C/svg%3E");
     transform: scaleY(-1);
 }
 
-/*
-   Even Sections (Secondary BG: Soft Pink #FFF0F5)
-   Connecting to Odd Section (Primary BG: Cream #FDFBF7)
-   -> The "Mountain" (SVG Fill) must be the Odd Section's BG color (#FDFBF7)
-*/
 .damso-section:nth-of-type(even) {
-    background-color: #FFF0F5;
+    background-color: var(--damso-color-surface);
 }
 
 .damso-section:nth-of-type(even).damso-section-divider::after {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' style='fill:%23FDFBF7;'%3E%3C/path%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' style='fill:white;'%3E%3C/path%3E%3C/svg%3E");
     transform: scaleY(-1);
 }
 
