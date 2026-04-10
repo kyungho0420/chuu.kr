@@ -30,44 +30,48 @@
 </head>
 
 <body>
+    <a href="/" class="site-home-link">
+        <span class="material-symbols-outlined">home</span>
+        <span>HOME</span>
+    </a>
 
-    <div class="pv-app">
-        <div class="pv-container">
-            <header class="pv-header">
-                <h1 class="pv-header__title" data-lang="home_title"></h1>
-                <p class="pv-header__description" data-lang="home_description"></p>
+    <div class="damso-app">
+        <div class="damso-container">
+            <header class="damso-header">
+                <h1 class="damso-header__title" data-lang="home_title"></h1>
+                <p class="damso-header__description" data-lang="home_description"></p>
 
-                <nav class="pv-lang-switcher">
-                    <a href="?lang=ko" class="pv-lang-btn">KO</a>
-                    <a href="?lang=en" class="pv-lang-btn">EN</a>
+                <nav class="damso-lang-switcher">
+                    <a href="?lang=ko" class="damso-lang-btn">KO</a>
+                    <a href="?lang=en" class="damso-lang-btn">EN</a>
                 </nav>
             </header>
 
-            <form id="order-form" class="pv-form" novalidate>
+            <form id="order-form" class="damso-form" novalidate>
                 <input type="hidden" name="form" value="chuu">
 
                 <!-- 1. Customer Info -->
-                <div class="pv-card">
-                    <div class="pv-card__header">
+                <div class="damso-card">
+                    <div class="damso-card__header">
                         <h2 data-lang="customer_info_title"></h2>
-                        <span class="pv-card__badge">Profile</span>
+                        <span class="damso-card__badge">Profile</span>
                     </div>
 
                     <div class="profile-list">
 
-                        <div class="pv-grid pv-grid--cols-3" style="gap: 12px;">
-                            <div class="pv-group">
-                                <label for="name" class="pv-label" data-lang="form_label_name">Name</label>
-                                <input type="text" id="name" name="name" required class="pv-input" placeholder="Name">
+                        <div class="damso-grid damso-grid--cols-3" style="gap: 12px;">
+                            <div class="damso-group">
+                                <label for="name" class="damso-label" data-lang="form_label_name">Name</label>
+                                <input type="text" id="name" name="name" required class="damso-input" placeholder="Name">
                             </div>
-                            <div class="pv-group">
-                                <label for="phone" class="pv-label" data-lang="form_label_phone">Phone</label>
-                                <input type="tel" id="phone" name="phone" required class="pv-input"
+                            <div class="damso-group">
+                                <label for="phone" class="damso-label" data-lang="form_label_phone">Phone</label>
+                                <input type="tel" id="phone" name="phone" required class="damso-input"
                                     placeholder="010-0000-0000">
                             </div>
-                            <div class="pv-group">
-                                <label for="email" class="pv-label" data-lang="form_label_email">Email</label>
-                                <input type="email" id="email" name="email" required class="pv-input"
+                            <div class="damso-group">
+                                <label for="email" class="damso-label" data-lang="form_label_email">Email</label>
+                                <input type="email" id="email" name="email" required class="damso-input"
                                     placeholder="example@email.com">
                             </div>
                         </div>
@@ -75,26 +79,26 @@
                 </div>
 
                 <!-- 2. Cake Order (Unified) -->
-                <div class="pv-card" id="card-cake">
-                    <div class="pv-card__header">
+                <div class="damso-card" id="card-cake">
+                    <div class="damso-card__header">
                         <h2 data-lang="cake_order_title"></h2>
-                        <span class="pv-card__badge">Custom</span>
+                        <span class="damso-card__badge">Custom</span>
                     </div>
 
                     <div class="cake-list">
                         <!-- Type & Size -->
-                        <div class="pv-group">
-                            <label class="pv-label" data-lang="cake_type"></label>
-                            <select name="cake_type" id="cake_type" class="pv-select" required>
+                        <div class="damso-group">
+                            <label class="damso-label" data-lang="cake_type"></label>
+                            <select name="cake_type" id="cake_type" class="damso-select" required>
                                 <option value="" data-lang="cake_type_none" data-price="0"></option>
                                 <option value="lettering" data-lang="cakes_lettering_title" data-price="55"></option>
                                 <option value="photo" data-lang="cakes_photo_title" data-price="65"></option>
                                 <option value="3d" data-lang="cakes_3d_title" data-price="85"></option>
                             </select>
                         </div>
-                        <div class="pv-group">
-                            <label class="pv-label" data-lang="cake_size_label"></label>
-                            <select name="cake_size" class="pv-select" required>
+                        <div class="damso-group">
+                            <label class="damso-label" data-lang="cake_size_label"></label>
+                            <select name="cake_size" class="damso-select" required>
                                 <option value="lunchbox" data-lang="opt_size_lunchbox" data-price="0"></option>
                                 <option value="size_1" data-lang="opt_size_1" data-price="15"></option>
                                 <option value="size_2" data-lang="opt_size_2" data-price="25"></option>
@@ -102,36 +106,36 @@
                         </div>
 
                         <!-- Flavor & Cream -->
-                        <div class="pv-group">
-                            <label class="pv-label" data-lang="cake_flavor_label"></label>
-                            <select name="cake_flavor" class="pv-select">
+                        <div class="damso-group">
+                            <label class="damso-label" data-lang="cake_flavor_label"></label>
+                            <select name="cake_flavor" class="damso-select">
                                 <option value="vanilla" data-lang="opt_flavor_vanilla" data-price="0"></option>
                                 <option value="choco" data-lang="opt_flavor_choco" data-price="3"></option>
                                 <option value="carrot" data-lang="opt_flavor_carrot" data-price="4"></option>
                                 <option value="redvelvet" data-lang="opt_flavor_redvelvet" data-price="5"></option>
                             </select>
                         </div>
-                        <div class="pv-group">
-                            <label class="pv-label" data-lang="cake_cream_label"></label>
-                            <select name="cake_cream" class="pv-select">
+                        <div class="damso-group">
+                            <label class="damso-label" data-lang="cake_cream_label"></label>
+                            <select name="cake_cream" class="damso-select">
                                 <option value="fresh" data-lang="opt_cream_fresh" data-price="0"></option>
                                 <option value="cheese" data-lang="opt_cream_cheese" data-price="4"></option>
                             </select>
                         </div>
 
                         <!-- Design Details -->
-                        <div class="pv-group">
-                            <label class="pv-label" data-lang="cake_details_label"></label>
-                            <textarea name="cake_details" class="pv-textarea" rows="3"
+                        <div class="damso-group">
+                            <label class="damso-label" data-lang="cake_details_label"></label>
+                            <textarea name="cake_details" class="damso-textarea" rows="3"
                                 data-lang-placeholder="cake_details_placeholder"></textarea>
                         </div>
 
                         <!-- Reference File (Condition: Hidden for Lettering) -->
-                        <div class="pv-group hidden" id="group-file">
-                            <label class="pv-label" data-lang="photo_upload"></label>
-                            <div class="pv-file-wrapper">
-                                <input type="file" name="attachments[]" class="pv-file-input" multiple accept="image/*">
-                                <div class="pv-file-label" data-lang="form_file_default_label"></div>
+                        <div class="damso-group hidden" id="group-file">
+                            <label class="damso-label" data-lang="photo_upload"></label>
+                            <div class="damso-file-wrapper">
+                                <input type="file" name="attachments[]" class="damso-file-input" multiple accept="image/*">
+                                <div class="damso-file-label" data-lang="form_file_default_label"></div>
                             </div>
                         </div>
 
@@ -139,83 +143,83 @@
                 </div>
 
                 <!-- 3. Cookie Order (Quantity Input) -->
-                <div class="pv-card">
-                    <div class="pv-card__header">
+                <div class="damso-card">
+                    <div class="damso-card__header">
                         <h2 data-lang="cookie_order_title"></h2>
-                        <span class="pv-card__badge">Add-on</span>
+                        <span class="damso-card__badge">Add-on</span>
                     </div>
 
                     <div class="cookie-list">
-                        <div class="pv-group">
-                            <label class="pv-label" data-lang="cookies_01_title"></label>
-                            <input type="number" name="cookie_01_qty" class="pv-input" min="0" placeholder="0"
+                        <div class="damso-group">
+                            <label class="damso-label" data-lang="cookies_01_title"></label>
+                            <input type="number" name="cookie_01_qty" class="damso-input" min="0" placeholder="0"
                                 data-unit-price="3.5">
                         </div>
-                        <div class="pv-group">
-                            <label class="pv-label" data-lang="cookies_02_title"></label>
-                            <input type="number" name="cookie_02_qty" class="pv-input" min="0" placeholder="0"
+                        <div class="damso-group">
+                            <label class="damso-label" data-lang="cookies_02_title"></label>
+                            <input type="number" name="cookie_02_qty" class="damso-input" min="0" placeholder="0"
                                 data-unit-price="3.5">
                         </div>
-                        <div class="pv-group">
-                            <label class="pv-label" data-lang="cookies_03_title"></label>
-                            <input type="number" name="cookie_03_qty" class="pv-input" min="0" placeholder="0"
+                        <div class="damso-group">
+                            <label class="damso-label" data-lang="cookies_03_title"></label>
+                            <input type="number" name="cookie_03_qty" class="damso-input" min="0" placeholder="0"
                                 data-unit-price="4.0">
                         </div>
-                        <div class="pv-group">
-                            <label class="pv-label" data-lang="cookies_04_title"></label>
-                            <input type="number" name="cookie_04_qty" class="pv-input" min="0" placeholder="0"
+                        <div class="damso-group">
+                            <label class="damso-label" data-lang="cookies_04_title"></label>
+                            <input type="number" name="cookie_04_qty" class="damso-input" min="0" placeholder="0"
                                 data-unit-price="4.0">
                         </div>
-                        <div class="pv-group">
-                            <label class="pv-label" data-lang="cookies_05_title"></label>
-                            <input type="number" name="cookie_05_qty" class="pv-input" min="0" placeholder="0"
+                        <div class="damso-group">
+                            <label class="damso-label" data-lang="cookies_05_title"></label>
+                            <input type="number" name="cookie_05_qty" class="damso-input" min="0" placeholder="0"
                                 data-unit-price="4.5">
                         </div>
-                        <div class="pv-group">
-                            <label class="pv-label" data-lang="cookies_06_title"></label>
-                            <input type="number" name="cookie_06_qty" class="pv-input" min="0" placeholder="0"
+                        <div class="damso-group">
+                            <label class="damso-label" data-lang="cookies_06_title"></label>
+                            <input type="number" name="cookie_06_qty" class="damso-input" min="0" placeholder="0"
                                 data-unit-price="4.5">
                         </div>
                         <!-- Added Description per Tier 3 Request -->
-                        <p class="pv-note" style="grid-column: 1 / -1; margin-top: 10px;">원하시는 수량을 입력해주세요. (개당)</p>
+                        <p class="damso-note" style="grid-column: 1 / -1; margin-top: 10px;">원하시는 수량을 입력해주세요. (개당)</p>
                     </div>
                 </div>
 
                 <!-- 4. Pickup & Delivery -->
-                <div class="pv-card">
-                    <div class="pv-card__header">
+                <div class="damso-card">
+                    <div class="damso-card__header">
                         <h2 data-lang="pickup_delivery_title"></h2>
-                        <span class="pv-card__badge">Delivery</span>
+                        <span class="damso-card__badge">Delivery</span>
                     </div>
 
                     <div class="pickup-list">
-                        <div class="pv-group">
-                            <label class="pv-label" data-lang="pickup_method"></label>
-                            <select name="pickup_method" id="pickup_method" class="pv-select">
+                        <div class="damso-group">
+                            <label class="damso-label" data-lang="pickup_method"></label>
+                            <select name="pickup_method" id="pickup_method" class="damso-select">
                                 <option value="pickup" data-lang="store_pickup"></option>
                                 <option value="delivery" data-lang="delivery"></option>
                             </select>
                         </div>
-                        <div class="pv-group">
-                            <label class="pv-label" data-lang="desired_date"></label>
-                            <input type="date" name="pickup_date" class="pv-input" required>
+                        <div class="damso-group">
+                            <label class="damso-label" data-lang="desired_date"></label>
+                            <input type="date" name="pickup_date" class="damso-input" required>
                         </div>
-                        <div class="pv-group hidden" id="group-address">
-                            <label class="pv-label" data-lang="delivery_address"></label>
-                            <input type="text" name="address" class="pv-input"
+                        <div class="damso-group hidden" id="group-address">
+                            <label class="damso-label" data-lang="delivery_address"></label>
+                            <input type="text" name="address" class="damso-input"
                                 data-lang-placeholder="delivery_address_ph">
-                            <p class="pv-note delivery_note" data-lang="delivery_note"></p>
+                            <p class="damso-note delivery_note" data-lang="delivery_note"></p>
                         </div>
                     </div>
                 </div>
                 <!-- 5. Additional Message -->
-                <div class="pv-card">
-                    <div class="pv-card__header">
+                <div class="damso-card">
+                    <div class="damso-card__header">
                         <h2 data-lang="additional_requests_title"></h2>
-                        <span class="pv-card__badge">Requests</span>
+                        <span class="damso-card__badge">Requests</span>
                     </div>
-                    <div class="pv-group">
-                        <textarea class="pv-textarea" name="message" rows="3"></textarea>
+                    <div class="damso-group">
+                        <textarea class="damso-textarea" name="message" rows="3"></textarea>
                     </div>
                 </div>
 
@@ -229,18 +233,18 @@
                 </div>
 
                 <!-- Submit -->
-                <div class="pv-submit-area">
-                    <div class="pv-check-group">
-                        <input type="checkbox" name="agree" id="agree" class="pv-check-input" required>
-                        <label for="agree" class="pv-check-label" data-lang="label_agree"></label>
+                <div class="damso-submit-area">
+                    <div class="damso-check-group">
+                        <input type="checkbox" name="agree" id="agree" class="damso-check-input" required>
+                        <label for="agree" class="damso-label" data-lang="label_agree"></label>
                     </div>
-                    <button type="submit" class="pv-btn pv-btn--submit pv-btn--full">
+                    <button type="submit" class="damso-btn damso-btn--submit damso-btn--full">
                         <span data-lang="btn_submit"></span>
                     </button>
                 </div>
             </form>
 
-            <footer class="pv-footer">
+            <footer class="damso-footer">
                 <p>&copy; 2025 CHUU. All Rights Reserved.</p>
             </footer>
         </div>
