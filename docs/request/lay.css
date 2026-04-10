@@ -96,36 +96,37 @@ body {
 /* 4. Navigation & Language Switcher Space */
 .damso-lang-switcher {
     display: inline-flex;
-    background: rgba(0, 0, 0, 0.1); /* Subtle capsule background */
-    padding: 4px;
+    background: rgba(0, 0, 0, 0.4); /* Andar Style Dark Capsule */
+    padding: 3px;
     border-radius: 50px;
     gap: 0;
     margin: 1.5rem auto;
     align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 [data-theme="dark"] .damso-lang-switcher {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(30, 30, 30, 0.9);
 }
 
 .damso-lang-btn {
-    padding: 6px 16px;
+    padding: 6px 18px;
     border-radius: 50px;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 700;
-    color: var(--damso-color-text-weak);
+    color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .damso-lang-btn.active {
     background-color: var(--damso-color-secondary); /* Mint Highlight */
     color: #FFFFFF !important;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .damso-lang-btn:hover:not(.active) {
-    color: var(--damso-color-text);
+    color: #FFFFFF;
 }
 
 /* 5. Smart Sticky Price Bar (Glassmorphism + Candy) */
