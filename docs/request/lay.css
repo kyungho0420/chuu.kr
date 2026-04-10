@@ -9,10 +9,10 @@
     --damso-color-bg: #FFF5F7;           /* Soft Cotton Candy Pink (Light) */
     --damso-color-surface: #FFFFFF;      /* Pure Cream */
     --damso-color-text: #5D4037;         /* Cookie Cocoa Brown */
-    --damso-color-secondary: #FFB7C5;    /* Cherry Blossom Pink */
+    --damso-color-primary: #FFB7C5;      /* Cherry Blossom Pink */
+    --damso-color-secondary: #4DAFB0;    /* Deep Mint (Contrast Improved) */
     --damso-color-label: #8D6E63;        /* Soft Brown Label */
     --damso-color-border: #FCE4EC;       /* Strawberries & Cream Border */
-    --damso-color-primary: #98D8D8;      /* Refreshing Mint */
     --damso-color-accent: #B39DDB;       /* Sweet Lavender */
     --damso-color-danger: #FF7043;       /* Peach Orange */
     --damso-radius: 16px;                /* Rounder, Cutier */
@@ -95,7 +95,15 @@ body {
     gap: 15px;
 }
 
-/* 4. Smart Sticky Price Bar (Glassmorphism + Candy) */
+/* 4. Navigation & Language Switcher Space */
+.damso-lang-switcher {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* 5. Smart Sticky Price Bar (Glassmorphism + Candy) */
 .price-sticky-bar {
     position: sticky;
     bottom: 24px;
@@ -161,4 +169,26 @@ body {
 .damso-btn--submit:hover {
     filter: brightness(1.05);
     transform: scale(1.01);
-}
+}
+
+/* 6. Checkbox Alignment */
+.damso-check-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.damso-check-input {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.damso-check-label {
+    font-size: 0.95rem;
+    color: var(--damso-color-text);
+    cursor: pointer;
+}

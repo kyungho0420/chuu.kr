@@ -8,7 +8,7 @@
 :root {
     /* --- Candy & Pastel Look (Light) --- */
     --damso-color-primary: #FFB7C5;      /* Cherry Blossom Pink */
-    --damso-color-secondary: #98D8D8;    /* Fresh Mint */
+    --damso-color-secondary: #4DAFB0;    /* Fresh Mint (Contrast Improved) */
     --damso-color-bg: #FFF5F7;           /* Cotton Candy Background */
     --damso-color-surface: #FFFFFF;      /* Cream */
     --damso-color-border: #FCE4EC;       /* Strawberry Border */
@@ -80,6 +80,11 @@ h6,
 .damso-nav__logo {
     font-family: 'Fredoka One', cursive;
     color: var(--damso-color-primary) !important;
+}
+
+.damso-lang-switcher {
+    display: flex;
+    gap: 12px;
 }
 
 .damso-header__description {
