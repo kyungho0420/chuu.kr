@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
         window.V4.init(siteConfig).then((app) => {
             initDynamicUI();
             initPriceCalculator();
-            initThemeToggle(); // 테마 토글 초기화 추가
         });
     }
 });
@@ -117,20 +116,4 @@ function initPriceCalculator() {
     form.addEventListener('change', calculate);
     form.addEventListener('input', calculate);
     calculate();
-}
-
-function initThemeToggle() {
-    const toggleBtn = document.getElementById('theme-toggle');
-    if (!toggleBtn) return;
-
-    toggleBtn.addEventListener('click', () => {
-        if (window.V4 && window.V4.App && window.V4.App.Theme) {
-            const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-            window.V4.App.Theme.applyTheme(!isDark);
-            
-            // 아이콘 업데이트
-            const icon = toggleBtn.querySelector('.material-symbols-outlined');
-            if (icon) icon.innerText = !isDark ? 'light_mode' : 'dark_mode';
-        }
-    });
 }

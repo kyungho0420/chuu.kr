@@ -43,21 +43,19 @@ body {
     margin: 0 auto;
 }
 
-/* Card: Soft & Round */
+/* Card: Matte & Round */
 .damso-card {
     padding: 1.75rem 1.5rem;
     margin-bottom: 1.5rem;
     border: 1px solid var(--damso-color-border);
-    box-shadow: 0 8px 32px rgba(255, 183, 197, 0.1); /* Pinky Shadow */
     background-color: var(--damso-color-surface);
     border-radius: var(--damso-radius);
     position: relative;
-    transition: transform 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .damso-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 40px rgba(255, 183, 197, 0.15);
+    border-color: var(--damso-color-secondary);
 }
 
 /* Labels: Sweet Cookie feel */
@@ -98,38 +96,10 @@ body {
 /* 4. Navigation & Language Switcher Space */
 .damso-lang-switcher {
     display: flex;
-    gap: 20px;
+    gap: 12px;
     justify-content: center;
     margin-bottom: 20px;
     align-items: center;
-}
-
-.damso-theme-btn {
-    background: rgba(255, 183, 197, 0.1);
-    border: 1px solid var(--damso-color-border);
-    color: var(--damso-color-secondary);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.damso-theme-btn:hover {
-    background: rgba(255, 183, 197, 0.2);
-    transform: rotate(30deg);
-}
-
-.damso-theme-btn .material-symbols-outlined {
-    font-size: 20px;
-}
-
-[data-theme="dark"] .damso-theme-btn {
-    background: rgba(152, 216, 216, 0.1);
-    color: var(--damso-color-primary);
 }
 
 /* 5. Smart Sticky Price Bar (Glassmorphism + Candy) */
@@ -143,7 +113,7 @@ body {
     border: 2px solid var(--damso-color-secondary); /* Pink Border */
     border-radius: 24px;
     padding: 1.25rem 2rem;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* Minimal shadow for depth */
     text-align: center;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }

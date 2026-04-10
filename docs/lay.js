@@ -188,22 +188,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (window.V4) {
         window.V4.init(siteConfig).then((app) => {
             app.registerEffect('heartEffect', window.heartEffect);
-            initThemeToggle();
         });
     }
 });
-
-function initThemeToggle() {
-    const toggleBtn = document.getElementById('theme-toggle');
-    if (!toggleBtn) return;
-
-    toggleBtn.addEventListener('click', () => {
-        if (window.V4 && window.V4.App && window.V4.App.Theme) {
-            const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-            window.V4.App.Theme.applyTheme(!isDark);
-            
-            const icon = toggleBtn.querySelector('.material-symbols-outlined');
-            if (icon) icon.innerText = !isDark ? 'light_mode' : 'dark_mode';
-        }
-    });
-}
