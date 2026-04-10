@@ -83,8 +83,38 @@ h6,
 }
 
 .damso-lang-switcher {
-    display: flex;
-    gap: 12px;
+    display: inline-flex;
+    background: rgba(0, 0, 0, 0.4); /* Andar Style Dark Capsule */
+    padding: 3px;
+    border-radius: 50px;
+    gap: 0;
+    margin: 1rem auto;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] .damso-lang-switcher {
+    background: rgba(30, 30, 30, 0.9);
+}
+
+.damso-lang-btn {
+    padding: 6px 18px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.damso-lang-btn.active {
+    background-color: var(--damso-color-secondary); /* Mint Highlight */
+    color: #FFFFFF !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.damso-lang-btn:hover:not(.active) {
+    color: #FFFFFF;
 }
 
 .damso-header__description {

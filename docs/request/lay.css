@@ -95,11 +95,37 @@ body {
 
 /* 4. Navigation & Language Switcher Space */
 .damso-lang-switcher {
-    display: flex;
-    gap: 12px;
-    justify-content: center;
-    margin-bottom: 20px;
+    display: inline-flex;
+    background: rgba(0, 0, 0, 0.1); /* Subtle capsule background */
+    padding: 4px;
+    border-radius: 50px;
+    gap: 0;
+    margin: 1.5rem auto;
     align-items: center;
+}
+
+[data-theme="dark"] .damso-lang-switcher {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.damso-lang-btn {
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--damso-color-text-weak);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.damso-lang-btn.active {
+    background-color: var(--damso-color-secondary); /* Mint Highlight */
+    color: #FFFFFF !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.damso-lang-btn:hover:not(.active) {
+    color: var(--damso-color-text);
 }
 
 /* 5. Smart Sticky Price Bar (Glassmorphism + Candy) */
