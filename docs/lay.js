@@ -12,7 +12,6 @@ const siteConfig = {
     },
     api: {
         server: 'damso',
-        turnstile: '0x4AAAAAABrG4DQP8tkp1_TI',
         redirect: '../'
     },
     canvas: {
