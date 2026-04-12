@@ -30,7 +30,6 @@
         "rep_name": "Hanna Kim"
     },
     "en": {
-        "btn_order": "Order Now",
         "cake_3d_option_01": "Flavor",
         "cake_3d_option_01_modifier": "options",
         "cake_3d_option_01_price": "Vanilla (Default)<br />Choco (+$5)",
@@ -130,7 +129,6 @@
         "promotion_01_title": "Get a Random Cookie Box with Cake Purchase"
     },
     "ko": {
-        "btn_order": "주문하기",
         "cake_3d_option_01": "맛",
         "cake_3d_option_01_modifier": "options",
         "cake_3d_option_01_price": "바닐라(기본)<br />초코(+$5)",
