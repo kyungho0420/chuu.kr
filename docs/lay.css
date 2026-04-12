@@ -70,7 +70,7 @@ h6,
 /* Header & Logo */
 .damso-header .home-logo {
     font-family: 'Fredoka One', cursive;
-    font-size: 7em;
+    font-size: clamp(3rem, 2rem + 6vw, 6rem);;
     text-shadow: 3px 3px 0px rgba(255, 183, 197, 0.6), 6px 6px 0px rgba(152, 216, 216, 0.4);
     color: #FFFFFF !important;
 }
