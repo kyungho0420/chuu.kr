@@ -71,7 +71,7 @@ h6,
 .damso-header .home-logo {
     font-family: 'Fredoka One', cursive;
     font-size: clamp(3rem, 2rem + 6vw, 6rem);;
-    text-shadow: 3px 3px 0px rgba(255, 183, 197, 0.6), 6px 6px 0px rgba(152, 216, 216, 0.4);
+    text-shadow: 2px 2px 8px rgba(255, 183, 197, 0.4);
     color: #FFFFFF !important;
 }
 
@@ -113,32 +113,24 @@ h6,
     color: #FFFFFF !important;
 }
 
-[data-theme="dark"] .damso-lang-btn.active {
-    color: #FFFFFF !important;
-}
-
 .damso-header__description {
-    font-family: 'Gowun Dodum', sans-serif;
-    font-size: 1.4rem;
-    color: #FFFFFF !important;
-    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 0.5em;
 }
 
-/* Buttons */
+/* Buttons: Matte UI Optimized */
 .damso-btn {
     border-radius: 50px;
     font-weight: 700;
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.3s ease;
     padding: 14px 36px;
     letter-spacing: 0.5px;
-    box-shadow: 0 4px 15px rgba(255, 183, 197, 0.3);
-    transform: translateY(0);
+    box-shadow: 0 4px 12px rgba(255, 183, 197, 0.2);
     color: #FFFFFF !important;
     background: linear-gradient(135deg, var(--damso-color-primary), var(--damso-color-accent));
 }
 
 [data-theme="dark"] .damso-btn {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 /* Section Dividers - Wave SVG */
