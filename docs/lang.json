@@ -24,12 +24,12 @@
         "cookies_09_price_6pack": "$28",
         "email_address": "chuu@chuu.kr",
         "email_href": "mailto:chuu@chuu.kr",
-        "home_description": "Baking your sweet moments",
         "home_title": "CHUU",
         "order_button_url": "./request",
         "rep_name": "Hanna Kim"
     },
     "en": {
+        "home_description": "Baking your sweet moments",
         "cake_3d_option_01": "Flavor",
         "cake_3d_option_01_modifier": "options",
         "cake_3d_option_01_price": "Vanilla (Default)<br />Choco (+$5)",
@@ -129,6 +129,7 @@
         "promotion_01_title": "Get a Random Cookie Box with Cake Purchase"
     },
     "ko": {
+        "home_description": "당신의 달콤한 순간을 만들어요",
         "cake_3d_option_01": "맛",
         "cake_3d_option_01_modifier": "options",
         "cake_3d_option_01_price": "바닐라(기본)<br />초코(+$5)",
