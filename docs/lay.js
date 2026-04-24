@@ -8,6 +8,8 @@ const siteConfig = {
         mode: 'demo',
         lang: 'ko',
         theme: true,
+		footer: true,
+        symbol: true,
         scroll_smooth: true
     },
     api: {
