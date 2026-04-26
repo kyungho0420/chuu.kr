@@ -67,13 +67,9 @@ window.heartEffect = {
         this.onMouseMove = this.onMouseMove.bind(this);
         this.onMouseOut = this.onMouseOut.bind(this);
         this.onResize = this.resize.bind(this);
-        this.animate = this.animate.bind(this);
-
         window.addEventListener('mousemove', this.onMouseMove);
         window.addEventListener('mouseout', this.onMouseOut);
         window.addEventListener('resize', this.onResize);
-
-        this.animate();
     },
 
     resize: function () {
@@ -123,7 +119,7 @@ window.heartEffect = {
         return { x, y, directionX, directionY, size, color, rotation };
     },
 
-    animate: function () {
+    draw: function () {
         if (!this.ctx) return;
         this.ctx.clearRect(0, 0, this.width, this.height);
 
@@ -168,8 +164,6 @@ window.heartEffect = {
                 this.ctx.fill();
             }
         }
-
-        this.animationFrameId = requestAnimationFrame(this.animate);
     },
 
     onMouseMove: function (event) {
