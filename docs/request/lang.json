@@ -50,8 +50,8 @@
         "delivery_note": "* Delivery fee will be charged separately."
     },
     "ko": {
-        "home_title": "CHUU 주문서",
-        "home_description": "당신의 달콤한 순간을 만듭니다.",
+        "meta_title": "츄 주문서 - 특별한 케이크 예약",
+        "meta_description": "츄의 레터링 케이크와 수제 쿠키 주문을 위한 온라인 주문서입니다.",
         "customer_info_title": "주문자 정보",
         "cake_order_title": "케이크 주문",
         "cookie_order_title": "쿠키 주문",
@@ -100,6 +100,8 @@
         "delivery_note": "* 배송 선택 시 배송비는 별도 청구됩니다."
     },
     "en": {
+        "meta_title": "CHUU Order - Custom Cake Reservation",
+        "meta_description": "Online order form for CHUU lettering cakes and handmade cookies.",
         "cake_flavor_label": "Sheet Flavor",
         "cake_details_label": "Lettering / Design",
         "photo_upload": "Reference Images",

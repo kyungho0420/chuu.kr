@@ -16,10 +16,11 @@
     --damso-color-text-weak: #8D6E63;
     --damso-color-accent: #B39DDB;       /* Lavender Accent */
 
-    --damso-bg-button: var(--damso-color-primary);
-    --damso-bg-button-hover: #F8A7B5;
-    --damso-card-border: var(--damso-color-border);
-    --damso-nav-bg-gradient: linear-gradient(135deg, rgba(255, 245, 247, 0.95), rgba(255, 255, 255, 0.95));
+    --damso-btn-color-bg: var(--damso-color-primary);
+    --damso-btn-color-bg-hover: #F8A7B5;
+    --damso-btn-color-text: #FFFFFF;
+    --damso-card-color-border: var(--damso-color-border);
+    --damso-nav-bg-image: linear-gradient(135deg, rgba(255, 245, 247, 0.95), rgba(255, 255, 255, 0.95));
     --damso-radius: 12px;
 }
 
@@ -33,34 +34,16 @@
     --damso-color-text: #FCE4EC;         /* Strawberry Milk Text */
     --damso-color-text-weak: #C4A7AE;
 
-    --damso-bg-button: var(--damso-color-primary);
-    --damso-bg-button-hover: #E55C1A;
-    --damso-nav-bg-gradient: linear-gradient(135deg, #2D2426, #3D3134);
+    --damso-btn-color-bg: var(--damso-color-primary);
+    --damso-btn-color-bg-hover: #E55C1A;
+    --damso-btn-color-text: #2D2426;
+    --damso-nav-bg-image: linear-gradient(135deg, rgba(45, 36, 38, 0.95), rgba(61, 49, 52, 0.95));
     --damso-radius: 12px;
 }
 
-body,
-.damso-card__title,
-.damso-process-item__title {
+body {
     font-family: 'Gowun Dodum', 'Pretendard', sans-serif;
     font-weight: 400;
-}
-
-/* Global Readability Overrides */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.damso-section__title,
-.damso-card__title,
-.damso-card__description,
-.damso-process-item__title,
-.damso-faq__title,
-.damso-faq__content,
-.damso-footer__text {
-    color: var(--damso-color-text) !important;
 }
 
 .damso-card__description {
