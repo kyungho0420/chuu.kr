@@ -51,15 +51,19 @@ body {
 }
 
 /* Header & Logo */
-.damso-header .home-logo {
+.brand-logo {
     font-family: 'Fredoka One', cursive;
-    font-size: clamp(3rem, 2rem + 6vw, 6rem);;
+    font-size: clamp(3rem, 2rem + 6vw, 6rem);
     text-shadow: 2px 2px 8px rgba(255, 183, 197, 0.4);
     color: #FFFFFF !important;
 }
 
-[data-theme="dark"] .damso-header .home-logo {
+[data-theme="dark"] .brand-logo {
     text-shadow: 3px 3px 0px rgba(255, 183, 197, 0.3), 6px 6px 15px rgba(255, 183, 197, 0.2);
+}
+
+.brand-slogan {
+    margin-top: 1em;
 }
 
 .damso-nav__logo {
@@ -67,30 +71,7 @@ body {
     color: var(--damso-color-primary) !important;
 }
 
-/* Language Switcher (Standardized Capsule Style) */
-.damso-lang-switcher {
-    display: inline-flex;
-    padding: 4px;
-    background: var(--damso-color-surface);
-    border: 1px solid var(--damso-color-border);
-    border-radius: 50px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-}
-
-.damso-lang-btn {
-    padding: 6px 16px;
-    border-radius: 50px;
-    font-size: 0.75rem;
-    font-weight: 700;
-    color: var(--damso-color-text-weak);
-    text-decoration: none;
-    transition: all 0.2s ease;
-}
-
-.damso-lang-btn:hover {
-    color: var(--damso-color-secondary);
-}
-
+/* Language Switcher Overrides (Optional - only variables if needed) */
 .damso-lang-btn.active {
     background-color: var(--damso-color-secondary);
     color: #FFFFFF !important;
