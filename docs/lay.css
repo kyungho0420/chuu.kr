@@ -55,46 +55,20 @@ body {
     font-family: 'Fredoka One', cursive;
     font-size: clamp(5rem, 4.4rem + 3vw, 8rem);
     text-shadow: 2px 2px 8px rgba(255, 183, 197, 0.4);
-    color: #FFFFFF !important;
 }
 
 [data-theme="dark"] .brand-logo {
     text-shadow: 3px 3px 0px rgba(255, 183, 197, 0.3), 6px 6px 15px rgba(255, 183, 197, 0.2);
 }
 
-.brand-slogan {
-    margin-top: 1em;
-}
-
 .damso-nav__logo {
     font-family: 'Fredoka One', cursive;
-    color: var(--damso-color-primary) !important;
+    color: var(--damso-color-primary);
 }
 
 /* Language Switcher Overrides (Optional - only variables if needed) */
 .damso-lang-btn.active {
     background-color: var(--damso-color-secondary);
-    color: #FFFFFF !important;
-}
-
-.damso-header__description {
-    margin-top: 1em;
-}
-
-/* Buttons: Matte UI Optimized */
-.damso-btn {
-    border-radius: 50px;
-    font-weight: 700;
-    transition: all 0.3s ease;
-    padding: 14px 36px;
-    letter-spacing: 0.5px;
-    box-shadow: 0 4px 12px rgba(255, 183, 197, 0.2);
-    color: #FFFFFF !important;
-    background: linear-gradient(135deg, var(--damso-color-primary), var(--damso-color-accent));
-}
-
-[data-theme="dark"] .damso-btn {
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 /* Section Dividers - Wave SVG */
